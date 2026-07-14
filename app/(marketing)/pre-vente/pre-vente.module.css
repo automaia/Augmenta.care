@@ -1,0 +1,618 @@
+.trustBar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: var(--color-neutral-50, #f5f5f7);
+  border-bottom: 1px solid var(--color-neutral-200, #e4e4e7);
+  font-size: 13px;
+  color: var(--color-neutral-700, #3f3f46);
+}
+
+.trustBarInner {
+  max-width: 1120px;
+  margin: 0 auto;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 16px;
+}
+
+.trustSeparator {
+  color: var(--color-neutral-400, #a1a1aa);
+}
+
+@media (max-width: 360px) {
+  .trustBar {
+    display: none;
+  }
+}
+
+/* Hero ----------------------------------------------------------------- */
+.hero {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    var(--color-neutral-50, #fafafa) 100%
+  );
+  padding: 80px 24px 64px;
+}
+
+.heroInner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .heroInner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.heroTitle {
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--color-neutral-900, #18181b);
+  margin: 0 0 16px;
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 56px;
+  }
+}
+
+.heroSubtitle {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--color-neutral-600, #52525b);
+  margin: 0 0 32px;
+  max-width: 520px;
+}
+
+@media (min-width: 1024px) {
+  .heroSubtitle {
+    font-size: 20px;
+  }
+}
+
+.heroActions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff9f0a;
+  color: #1c1c1e;
+  font-size: 18px;
+  font-weight: 600;
+  height: 56px;
+  padding: 0 32px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 0.1s ease,
+    background 0.2s ease;
+  width: 100%;
+  max-width: 420px;
+}
+
+.ctaPrimary:hover {
+  background: #f08c00;
+  transform: translateY(-1px);
+}
+
+.heroSubCta {
+  font-size: 14px;
+  color: var(--color-neutral-500, #71717a);
+}
+
+.stripeNotice,
+.errorNotice {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.stripeNotice {
+  background: #fff7e6;
+  border: 1px solid #fadb94;
+  color: #874800;
+}
+
+.errorNotice {
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  color: #991b1b;
+}
+
+.heroVisual {
+  display: flex;
+  justify-content: center;
+}
+
+.heroPhoneMockup {
+  background: #1c1c1e;
+  border-radius: 32px;
+  padding: 16px;
+  width: 280px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    0 24px 48px rgba(0, 0, 0, 0.18);
+  color: #ffffff;
+}
+
+.heroPhoneHeader {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.heroPhoneDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4b4b4f;
+}
+
+.heroPhoneBody {
+  background: #2c2c2e;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.heroPhoneLabel {
+  font-size: 12px;
+  color: #8e8e93;
+  margin: 0 0 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.heroPhoneName {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.heroPhoneTranscript {
+  font-size: 14px;
+  font-style: italic;
+  color: #d1d1d6;
+  margin: 0;
+}
+
+/* How it works --------------------------------------------------------- */
+.howItWorks {
+  padding: 80px 24px;
+  background: #ffffff;
+}
+
+.howItWorksInner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-primary-600, #2563eb);
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.sectionTitle {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--color-neutral-900, #18181b);
+  margin: 0 0 32px;
+  max-width: 720px;
+}
+
+@media (min-width: 768px) {
+  .sectionTitle {
+    font-size: 40px;
+  }
+}
+
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.stepCard {
+  background: var(--color-neutral-50, #fafafa);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.stepIcon {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.stepTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: var(--color-neutral-900, #18181b);
+}
+
+.stepText {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-neutral-600, #52525b);
+  margin: 0;
+}
+
+/* Pricing -------------------------------------------------------------- */
+.pricing {
+  padding: 80px 24px;
+  background: var(--color-neutral-50, #fafafa);
+}
+
+.pricingInner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.pricingGrid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+  margin: 24px 0 32px;
+}
+
+@media (min-width: 768px) {
+  .pricingGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.priceCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.04);
+  position: relative;
+}
+
+.priceCardRecommended {
+  border: 2px solid #ff9f0a;
+}
+
+.priceBadge {
+  position: absolute;
+  top: -12px;
+  right: 24px;
+  background: #ff9f0a;
+  color: #1c1c1e;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.pricePlan {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-primary-600, #2563eb);
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+.priceAmount {
+  margin: 0 0 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.priceBig {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-neutral-900, #18181b);
+  line-height: 1;
+}
+
+.priceUnit {
+  font-size: 14px;
+  color: var(--color-neutral-500, #71717a);
+  margin-top: 4px;
+}
+
+.priceNote {
+  font-size: 14px;
+  color: var(--color-neutral-500, #71717a);
+  font-style: italic;
+  margin: 0 0 20px;
+}
+
+.priceFeatures {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  display: grid;
+  gap: 8px;
+}
+
+.priceFeatures li {
+  font-size: 14px;
+  color: var(--color-neutral-700, #3f3f46);
+}
+
+.promoBanner {
+  background: #fff7e6;
+  border: 1px solid #fadb94;
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #874800;
+  margin: 0 0 8px;
+}
+
+.promoFine {
+  font-size: 12px;
+  color: var(--color-neutral-500, #71717a);
+  margin: 0;
+}
+
+/* CTA form ------------------------------------------------------------- */
+.ctaForm {
+  display: grid;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.ctaField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ctaLabel {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-neutral-500, #71717a);
+  font-weight: 600;
+}
+
+.ctaInput {
+  height: 44px;
+  padding: 0 12px;
+  border-radius: 8px;
+  border: 1px solid var(--color-neutral-200, #e4e4e7);
+  font-size: 16px;
+  background: #ffffff;
+}
+
+.ctaInput:focus {
+  outline: none;
+  border-color: var(--color-primary-500, #3b82f6);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff9f0a;
+  color: #1c1c1e;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.1s ease;
+}
+
+.ctaButton:hover:not(:disabled) {
+  background: #f08c00;
+  transform: translateY(-1px);
+}
+
+.ctaButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ctaError {
+  font-size: 13px;
+  color: #991b1b;
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 0;
+}
+
+.ctaTestMode {
+  font-size: 12px;
+  color: var(--color-neutral-500, #71717a);
+  text-align: center;
+  margin: 0;
+}
+
+/* Trust ---------------------------------------------------------------- */
+.trust {
+  padding: 80px 24px;
+  background: #ffffff;
+}
+
+.trustInner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.trustGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .trustGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.trustCard {
+  background: var(--color-neutral-50, #fafafa);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.trustIcon {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.trustTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: var(--color-neutral-900, #18181b);
+}
+
+.trustText {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-neutral-600, #52525b);
+  margin: 0 0 12px;
+}
+
+.trustLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.trustLinks a {
+  font-size: 13px;
+  color: var(--color-primary-600, #2563eb);
+  text-decoration: none;
+}
+
+.trustLinks a:hover {
+  text-decoration: underline;
+}
+
+/* FAQ ------------------------------------------------------------------ */
+.faq {
+  padding: 80px 24px;
+  background: var(--color-neutral-50, #fafafa);
+}
+
+.faqInner {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.faqList {
+  display: grid;
+  gap: 8px;
+}
+
+.faqItem {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.faqQuestion {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-neutral-900, #18181b);
+  cursor: pointer;
+  list-style: none;
+}
+
+.faqQuestion::-webkit-details-marker {
+  display: none;
+}
+
+.faqQuestion::after {
+  content: "+";
+  float: right;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--color-neutral-500, #71717a);
+}
+
+.faqItem[open] .faqQuestion::after {
+  content: "−";
+}
+
+.faqAnswer {
+  margin: 12px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-neutral-600, #52525b);
+}
+
+/* Final CTA ------------------------------------------------------------ */
+.finalCta {
+  padding: 80px 24px;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    var(--color-neutral-50, #fafafa) 100%
+  );
+  text-align: center;
+}
+
+.finalCtaInner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.finalCtaText {
+  font-size: 16px;
+  color: var(--color-neutral-600, #52525b);
+  margin: 0 0 8px;
+}

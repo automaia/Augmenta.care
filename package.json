@@ -12,6 +12,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit",
+    "test": "node --import \"data:text/javascript,import { register } from 'node:module'; import { pathToFileURL } from 'node:url'; register('./tests/alias-resolver.mjs', pathToFileURL('./'));\" --test --experimental-strip-types tests/**/*.test.ts",
+    "brevo:provision": "node --experimental-strip-types scripts/brevo-provision.ts",
     "prepare": "husky || true"
   },
   "dependencies": {
@@ -21,6 +23,7 @@
     "postcss": "^8.5.16",
     "react": "19.0.0",
     "react-dom": "19.0.0",
+    "stripe": "^17.7.0",
     "tailwind-merge": "^3.6.0",
     "tailwindcss": "^4.3.2"
   },
